@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'Rambla';
+    src: local('Rambla'),
+        url('./assets/Rambla-Regular.woff2') format('woff2'),
+        url('./assets/Rambla-Regular.woff') format('woff'),
+        url('./assets/Rambla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@tailwind utilities;
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.initial-wrapper{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(29, 29, 67, 0.5) 100%), linear-gradient(180deg, #1D1D43 0%, #CE751D 100%);
+    height:43rem
+}
+
+.second-wrapper{
+    background:linear-gradient(180deg, #FF005C 0%, rgba(255, 255, 255, 0.5) 50%), #5F4B8B;
+    height:43rem
+}
+
+.third-wrapper{
+    background:#191970;
+    height:43rem
+}
+
+.blinking-cursor{
+      width: 2px;
+      height: 62px;
+      background-color: white;
+      margin-left: 8px;
+      animation: blink .6s linear infinite alternate;
+}
+
+.fourth-wrapper{
+    background:#544D4D;
+    height:43rem
+}
