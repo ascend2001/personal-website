@@ -3,17 +3,16 @@ import AvnishMoon from './assets/avnish-on-moon.svg';
 import stars from './assets/stars.svg';
 import leaningMan from './assets/leaning-man.svg';
 import SkillsChest from './assets/Skills-chest.svg';
-import laptop from './assets/laptop.svg';
-import askerSpeech from './assets/asker-speech-bubble.svg';
-import responderSpeech from './assets/responder-speech-bubble.svg';
 import ExpCard from './ExpCard';
 import apprenticeLogo from './assets/apprentice-logo.png';
 import hussleLogo from './assets/hussle-logo.png';
 import bpLogo from './assets/bp-logo.png';
 import dsuLogo from './assets/dsuLogo.png';
 import uclaLogo from './assets/uclaLogo.png';
-import DMLogo from './assets/datamatchLogo.png';
+// import DMLogo from './assets/datamatchLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
+import JokeGenerator from './jokeGenerator';
+
 // import transparent from './assets/transparent.png';
 
 const apprenticeWork = ['Increased sales tracking efficiency by over 70% by automating tracking on commission dashboard using Excel and Zapier.',
@@ -33,7 +32,7 @@ const IDEAHacksWork = ['Spearheaded correspondence and detail-oriented negotiati
 
 function App() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col select-none">
       <header className="initial-wrapper">
         <div className="absolute">
           <img src={stars} alt="" width="1392.3" height="695" className="blur-sm" />
@@ -74,29 +73,30 @@ function App() {
             <ExpCard imageName={bpLogo} company="LA Blueprint" role="Incoming Full-Stack Developer" timeline="January 2022" location="Los Angeles, CA" />
             <ExpCard imageName={dsuLogo} company="Data Science Union" role="Incoming Data Analyst" timeline="January 2022" location="Los Angeles, CA" />
             <ExpCard imageName={uclaLogo} work={LAWork} company="Undergraduate Learning Assistant Program at UCLA" role="Math 31AL Learning Assistant" timeline="September 2021 - December 2021" location="Los Angeles, CA" />
-            <ExpCard imageName={DMLogo} company="Datamatch at UCLA" role="Vice President of Social Affairs" timeline="June 2021 - Present" location="Los Angeles, CA" />
+            {/* <ExpCard
+            imageName={DMLogo}
+            company="Datamatch at UCLA"
+            role="Vice President of Social Affairs"
+            timeline="June 2021 - Present"
+            location="Los Angeles, CA" /> */}
             <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | UCLA IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Los Angeles, CA" />
           </div>
         </div>
-        <div className="flex place-items-center lg:basis-1/3">
+        <div className="flex place-items-center lg:basis-1/3 sm:hidden lg:flex">
           <img src={SkillsChest} alt="" width="536" height="798" className="skillsChest-img" />
         </div>
       </section>
-      <section className="flex flex-row fourth-wrapper">
-        <div className="flex flex-col basis-2/3 text-3xl place-content-center" />
-        <div className="flex flex-col justify-around relative">
-          <img src={askerSpeech} alt="" width="280" height="144.25" />
-          <div className="speech-bubble-wrapper absolute top-16 left-12 text-lg">
-            Which github branch are you on?
-          </div>
-          <img src={laptop} alt="" width="440.5" height="239.5" className="basis-1/3" />
-          <div className="flex flex-row place-content-end">
-            <img src={responderSpeech} alt="" width="280" height="144.25" />
-            <div className="absolute bottom-20 right-6 text-lg">
-              The one where I am branching out.
-            </div>
+      <section className="flex flex-col lg:flex-row fourth-wrapper">
+        <div className="flex flex-col text-white">
+          <div className="text-6xl mt-8 ml-4">Projects</div>
+          <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
+            <div className="h-52 w-52 bg-white" />
+            <div className="h-52 w-52 bg-white" />
+            <div className="h-52 w-52 bg-white" />
+            <div className="h-52 w-52 bg-white" />
           </div>
         </div>
+        <JokeGenerator />
       </section>
 
     </div>
