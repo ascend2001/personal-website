@@ -74,7 +74,7 @@
 
 .second-wrapper{
     background: #5F4B8B;
-    height:63rem
+    /* height:56rem */
 }
 
 
@@ -105,13 +105,30 @@
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-  }
-
-.third-wrapper{
-    background:#191970;
-    height:166rem
 }
 
+.leaning-man-img{
+    width:auto;
+    height: 31.25rem;
+}
+
+.skillsChest-img{
+    width:33.5rem;
+    height:49.875rem;
+}
+.third-wrapper{
+    background:#191970;
+    /* height:86rem */
+}
+
+.speech-bubble-wrapper{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width:13rem;
+    text-align:center
+}
 .blinking-cursor{
       width: 2px;
       height: 62px;
