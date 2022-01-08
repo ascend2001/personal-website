@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Rambla', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Red Hat Text', 'Rambla', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
