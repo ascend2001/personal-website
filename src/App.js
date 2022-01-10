@@ -12,6 +12,7 @@ import uclaLogo from './assets/uclaLogo.png';
 // import DMLogo from './assets/datamatchLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
 import JokeGenerator from './jokeGenerator';
+import smartTherapy from './assets/smart-therapy.png';
 
 // import transparent from './assets/transparent.png';
 
@@ -57,16 +58,19 @@ function App() {
           </div>
         </div>
       </header>
-      <section className="flex flex-row second-wrapper text-white">
+      <section className="flex flex-row gap-x-32 second-wrapper text-white">
         <div className=" flex flex-col mt-6 ml-12 lg:basis-2/3">
           <div className="text-6xl mt-8 ml-4">Experiences</div>
           <ExpCard imageName={hussleLogo} company="Hussle" work={hussleWork} role="Frontend Engineering Intern" timeline="September 2021 - December 2021" location="Los Angeles, CA" />
           <ExpCard imageName={apprenticeLogo} work={apprenticeWork} company="Apprentice" role="Software Engineering Intern" timeline="August 2021 - October 2021" location="Los Angeles, CA" />
 
         </div>
-        <img src={leaningMan} alt="" width="203.5" height="659" className="leaning-man-img place-items-center lg:basis-1/3 sm:hidden lg:flex my-48" />
+        <div className="sm:hidden lg:flex place-items-center">
+          <img src={leaningMan} alt="" className="leaning-man-img" />
+        </div>
+
       </section>
-      <section className="flex flex-row third-wrapper text-white">
+      <section className="flex flex-row gap-x-32 third-wrapper text-white">
         <div className="lg:basis-2/3 sm:basis-3/3 flex flex-col">
           <div className="text-6xl mt-8 ml-4">Extracurriculars</div>
           <div className="flex flex-col mt-6 ml-12">
@@ -82,18 +86,30 @@ function App() {
             <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | UCLA IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Los Angeles, CA" />
           </div>
         </div>
-        <div className="flex place-items-center lg:basis-1/3 sm:hidden lg:flex">
-          <img src={SkillsChest} alt="" width="536" height="798" className="skillsChest-img" />
+        <div className="place-items-center sm:hidden lg:flex">
+          <img src={SkillsChest} alt="" className="skillsChest-img" />
         </div>
       </section>
       <section className="flex flex-col lg:flex-row fourth-wrapper">
         <div className="flex flex-col text-white">
           <div className="text-6xl mt-8 ml-4">Projects</div>
           <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
-            <div className="h-52 w-52 bg-white" />
-            <div className="h-52 w-52 bg-white" />
-            <div className="h-52 w-52 bg-white" />
-            <div className="h-52 w-52 bg-white" />
+            <div className="relative">
+              <img src={smartTherapy} alt="" className="project-img" />
+              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
+            </div>
+            <div className="relative">
+              <img src={smartTherapy} alt="" className="project-img" />
+              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
+            </div>
+            <div className="relative">
+              <img src={smartTherapy} alt="" className="project-img" />
+              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
+            </div>
+            <div className="relative">
+              <img src={smartTherapy} alt="" className="project-img" />
+              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
+            </div>
           </div>
         </div>
         <JokeGenerator />

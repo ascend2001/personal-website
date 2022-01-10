@@ -107,15 +107,11 @@
     font-display: swap;
 }
 
-.leaning-man-img{
+.leaning-man-img, .skillsChest-img{
     width:auto;
     height: 31.25rem;
 }
 
-.skillsChest-img{
-    width:33.5rem;
-    height:49.875rem;
-}
 .third-wrapper{
     background:#191970;
     /* height:86rem */
@@ -166,4 +162,9 @@
 .jokeButton:active {
 	position:relative;
 	top:1px;
+}
+
+.project-img{
+    height:13rem;
+    width:auto;
 }
