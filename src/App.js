@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import AvnishMoon from './assets/avnish-on-moon.svg';
 import stars from './assets/stars.svg';
 import leaningMan from './assets/leaning-man.svg';
@@ -12,7 +14,7 @@ import uclaLogo from './assets/uclaLogo.png';
 // import DMLogo from './assets/datamatchLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
 import JokeGenerator from './jokeGenerator';
-import smartTherapy from './assets/smart-therapy.png';
+import smartTherapy from './assets/smart-therapy.svg';
 
 // import transparent from './assets/transparent.png';
 
@@ -96,7 +98,13 @@ function App() {
           <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
             <div className="relative">
               <img src={smartTherapy} alt="" className="project-img" />
-              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
+              <a href="https://github.com/AlexPascadi/therapy-review">
+                <div className="flex flex-col gap-4 place-items-center place-content-center text-center h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-80 top-0">
+                  <h3 className="text-lg">Smart Therapy</h3>
+                  <p className="text-base">Web Application for users to leave reviews for local therapists!</p>
+                  <FontAwesomeIcon icon={faLink} />
+                </div>
+              </a>
             </div>
             <div className="relative">
               <img src={smartTherapy} alt="" className="project-img" />
