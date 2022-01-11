@@ -9,7 +9,6 @@ import hussleLogo from './assets/hussle-logo.png';
 import bpLogo from './assets/bp-logo.png';
 import dsuLogo from './assets/dsuLogo.png';
 import uclaLogo from './assets/uclaLogo.png';
-// import DMLogo from './assets/datamatchLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
 import JokeGenerator from './jokeGenerator';
 import ProjectCard from './ProjectCard';
@@ -17,6 +16,7 @@ import smartTherapy from './assets/smart-therapy.svg';
 import chatTracker from './assets/ChatTracker.svg';
 import TimeExperiment from './assets/TimeExperiment.svg';
 import NPDatabase from './assets/NPDatabase.svg';
+// import DMLogo from './assets/datamatchLogo.png';
 // import transparent from './assets/transparent.png';
 
 const apprenticeWork = ['Increased sales tracking efficiency by over 70% by automating tracking on commission dashboard using Excel and Zapier.',
@@ -33,11 +33,28 @@ const LAWork = ['Tutored and facilitated instruction to 200+ students through we
 
 const IDEAHacksWork = ['Spearheaded correspondence and detail-oriented negotiations with 30+ sponsors for Southern California’s largest hackathon.',
   'Secured 20% of the sponsorships on the team including Chipotle offering cash prizes of eight $50 gift cards and 2 meals of $100'];
+function HandleClick(event) {
+  if (event.target.id === 'ToExperience') {
+    const anchor = document.querySelector('#Experience');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (event.target.id === 'ToExtracurriculars') {
+    const anchor = document.querySelector('#Extracurriculars');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (event.target.id === 'ToProjects') {
+    const anchor = document.querySelector('#Projects');
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 
 function App() {
   return (
     <div className="flex flex-col select-none">
-      <header className="initial-wrapper">
+      <header className="h-12 bg-black flex flex-row place-items-center place-content-center space-around text-white text-lg">
+        <div className="basis-1/3 hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExperience">Experience</div>
+        <div className="basis-1/3 hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExtracurriculars">Extracurriculars</div>
+        <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToProjects">Projects</div>
+      </header>
+      <section className="initial-wrapper">
         <div className="absolute">
           <img src={stars} alt="" width="1392.3" height="695" className="blur-sm" />
         </div>
@@ -60,8 +77,8 @@ function App() {
             <img src={AvnishMoon} alt="" width="536" height="798" className="z-10 md:-mb-96" />
           </div>
         </div>
-      </header>
-      <section className="flex flex-row gap-x-32 second-wrapper text-white">
+      </section>
+      <section className="flex flex-row gap-x-32 second-wrapper text-white" id="Experience" name="Experience">
         <div className=" flex flex-col mt-6 ml-12 lg:basis-2/3">
           <div className="text-6xl mt-8 ml-4">Experiences</div>
           <ExpCard imageName={hussleLogo} company="Hussle" work={hussleWork} role="Frontend Engineering Intern" timeline="September 2021 - December 2021" location="Los Angeles, CA" />
@@ -73,7 +90,7 @@ function App() {
         </div>
 
       </section>
-      <section className="flex flex-row gap-x-32 third-wrapper text-white">
+      <section className="flex flex-row gap-x-32 third-wrapper text-white" id="Extracurriculars" name="Extracurriculars">
         <div className="lg:basis-2/3 sm:basis-3/3 flex flex-col">
           <div className="text-6xl mt-8 ml-4">Extracurriculars</div>
           <div className="flex flex-col mt-6 ml-12">
@@ -93,7 +110,7 @@ function App() {
           <img src={SkillsChest} alt="" className="skillsChest-img" />
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row fourth-wrapper">
+      <section className="flex flex-col lg:flex-row fourth-wrapper" id="Projects">
         <div className="flex flex-col text-white">
           <div className="text-6xl mt-8 ml-4">Projects</div>
           <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
