@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
 import AvnishMoon from './assets/avnish-on-moon.svg';
 import stars from './assets/stars.svg';
 import leaningMan from './assets/leaning-man.svg';
@@ -14,8 +12,11 @@ import uclaLogo from './assets/uclaLogo.png';
 // import DMLogo from './assets/datamatchLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
 import JokeGenerator from './jokeGenerator';
+import ProjectCard from './ProjectCard';
 import smartTherapy from './assets/smart-therapy.svg';
-
+import chatTracker from './assets/ChatTracker.svg';
+import TimeExperiment from './assets/TimeExperiment.svg';
+import NPDatabase from './assets/NPDatabase.svg';
 // import transparent from './assets/transparent.png';
 
 const apprenticeWork = ['Increased sales tracking efficiency by over 70% by automating tracking on commission dashboard using Excel and Zapier.',
@@ -96,28 +97,10 @@ function App() {
         <div className="flex flex-col text-white">
           <div className="text-6xl mt-8 ml-4">Projects</div>
           <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
-            <div className="relative">
-              <img src={smartTherapy} alt="" className="project-img" />
-              <a href="https://github.com/AlexPascadi/therapy-review">
-                <div className="flex flex-col gap-4 place-items-center place-content-center text-center h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-80 top-0">
-                  <h3 className="text-lg">Smart Therapy</h3>
-                  <p className="text-base">Web Application for users to leave reviews for local therapists!</p>
-                  <FontAwesomeIcon icon={faLink} />
-                </div>
-              </a>
-            </div>
-            <div className="relative">
-              <img src={smartTherapy} alt="" className="project-img" />
-              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
-            </div>
-            <div className="relative">
-              <img src={smartTherapy} alt="" className="project-img" />
-              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
-            </div>
-            <div className="relative">
-              <img src={smartTherapy} alt="" className="project-img" />
-              <div className="h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-70 top-0">Click on me!</div>
-            </div>
+            <ProjectCard title="Smart Therapy" subtitle="Web Application for users to leave reviews for local therapists!" link="https://github.com/AlexPascadi/therapy-review" image={smartTherapy} />
+            <ProjectCard title="Chat Tracker" subtitle="A chat tracker written in C++ that can track user activity on a mock user platform using Binary Trees and Hash maps." link="https://github.com/ascend2001/ChatTracker" image={chatTracker} />
+            <ProjectCard title="Reaction Time Experiment" subtitle="A research study using C code and Arduinos to measure Reaction Time to light stimuli vs word stimuli" link="https://github.com/ascend2001/Reaction-Time-Experiment" image={TimeExperiment} />
+            <ProjectCard title="Nobel Prize Database" subtitle="A web based JSON API to search Nobel Prizes and laureates, their affiliations, dates, and place of birth." link="https://github.com/ascend2001/NobelPrizeDb" image={NPDatabase} />
           </div>
         </div>
         <JokeGenerator />
