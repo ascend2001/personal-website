@@ -15,9 +15,9 @@ function HandleClick(event) {
 
 function MenuBar() {
   return (
-    <header className="h-16 bg-black flex flex-row place-items-center place-content-center space-around text-white text-2xl">
-      <div className="basis-1/3 hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExperience">Experience</div>
-      <div className="basis-1/3 hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExtracurriculars">Extracurriculars</div>
+    <header className="h-16 bg-black flex flex-row place-items-center place-content-center justify-center gap-x-16 text-white text-2xl">
+      <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExperience">Experience</div>
+      <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExtracurriculars">Extracurriculars</div>
       <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToProjects">Projects</div>
     </header>
   );

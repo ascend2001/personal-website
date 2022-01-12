@@ -17,8 +17,8 @@ const IDEAHacksWork = ['Spearheaded correspondence and detail-oriented negotiati
 
 function ExtracurricularSection() {
   return (
-    <section className="flex flex-row gap-x-32 third-wrapper text-white" id="Extracurriculars" name="Extracurriculars">
-      <div className="lg:basis-2/3 sm:basis-3/3 flex flex-col">
+    <section className="flex bg-gradient-to-r from-cyan-500 to-blue-500 flex-row gap-x-16 text-white" id="Extracurriculars" name="Extracurriculars">
+      <div className="lg:basis-2/3 sm:basis-3/3 mt-6 ml-12 flex flex-col">
         <div className="text-6xl mt-8 ml-4">Extracurriculars</div>
         <div className="flex flex-col mt-6 ml-12">
           <ExpCard imageName={bpLogo} company="LA Blueprint" role="Incoming Full-Stack Developer" timeline="January 2022" location="Los Angeles, CA" />
@@ -30,7 +30,7 @@ function ExtracurricularSection() {
             role="Vice President of Social Affairs"
             timeline="June 2021 - Present"
             location="Los Angeles, CA" /> */}
-          <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | UCLA IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Los Angeles, CA" />
+          <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Los Angeles, CA" />
         </div>
       </div>
       <div className="place-items-center sm:hidden lg:flex">
