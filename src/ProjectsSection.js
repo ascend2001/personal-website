@@ -24,7 +24,7 @@ const DbWork = ['Designed an entity-relationship model to store JSON data about 
 
 function ProjectsSection() {
   return (
-    <section className="flex flex-col lg:flex-row bg-gradient-to-r from-fuchsia-300 to-orange-600 aspect-video" id="Projects">
+    <section className="flex flex-col lg:flex-row bg-gradient-to-r from-fuchsia-300 to-orange-600" id="Projects">
       <div className="flex flex-col text-white">
         <div className="text-6xl mt-8 ml-4">Projects</div>
         <div className="md:ml-32 mt-24 md:grid md:grid-cols-2 md:gap-12 sm:flex sm:flex-col sm:items-center sm:gap-y-8">

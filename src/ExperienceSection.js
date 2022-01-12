@@ -14,7 +14,7 @@ const hussleWork = ['Worked on the development of the beta version of a cross-pl
 
 function ExperienceSection() {
   return (
-    <section className="flex flex-row gap-x-32 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white aspect-video" id="Experience" name="Experience">
+    <section className="flex flex-row gap-x-32 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white" id="Experience" name="Experience">
       <div className=" flex flex-col mt-6 ml-12 lg:basis-2/3">
         <div className="text-6xl mt-8 ml-4">Experiences</div>
         <ExpCard imageName={hussleLogo} company="Hussle" work={hussleWork} role="Frontend Engineering Intern" timeline="September 2021 - December 2021" location="Los Angeles, CA" />

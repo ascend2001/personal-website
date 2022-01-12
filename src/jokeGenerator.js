@@ -34,7 +34,7 @@ function JokeGenerator() {
         <img src={minions} alt="" width="440.5" height="239.5" className="basis-1/3" />
         <div className="flex flex-row place-content-end">
           <img src={responderSpeech} alt="" width="280" height="144.25" className="my-8 lg:ml-40" />
-          <div className="speech-bubble-wrapper absolute lg:right-12 right-32 bottom-40 2xl:bottom-48 text-lg">
+          <div className="speech-bubble-wrapper absolute lg:right-12 right-32 bottom-40 text-lg">
             {jokes[i].responder}
           </div>
         </div>
