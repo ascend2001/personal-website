@@ -1,8 +1,6 @@
 /* eslint-disable react/jsx-no-bind */
 import React from 'react';
-import {
-  AiFillInstagram, AiFillGithub, AiFillLinkedin, AiFillFacebook,
-} from 'react-icons/ai';
+import ContactBar from './Contact';
 import AvnishMoon from './assets/avnish-on-moon.svg';
 import ProfileImg from './assets/AvnishImg.png';
 
@@ -30,7 +28,7 @@ function LandingSection() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-r gap-x-80 to-amber-200 from-orange-500 flex flex-col lg:flex-row text-white gap-x-14" id="AboutMe" name="AboutMe">
+      <section className="bg-gradient-to-r gap-x-80 to-amber-300 from-orange-500 flex flex-col lg:flex-row text-white gap-x-14" id="AboutMe" name="AboutMe">
         <div className="lg:basis-1/2 sm:basis-3/3 flex flex-col mt-6 ml-12">
           <div className="text-6xl mt-8 ml-4">About Me</div>
           <div className="experience-card-company-role text-3xl ml-4 mt-8">
@@ -40,20 +38,7 @@ function LandingSection() {
             data engineering, and learning new ways to create things. When I am not coding,
             or working I like writing, organizing events, and playing badminton!
           </div>
-          <div className="flex flex-row justify-center gap-x-4 mt-12">
-            <a href="https://www.instagram.com/asengupta2001/">
-              <AiFillInstagram size="2.5em" />
-            </a>
-            <a href="https://github.com/ascend2001">
-              <AiFillGithub size="2.5em" />
-            </a>
-            <a href="https://www.linkedin.com/in/avnish-sengupta/">
-              <AiFillLinkedin size="2.5em" />
-            </a>
-            <a href="https://www.facebook.com/avnish.sengupta/">
-              <AiFillFacebook size="2.5em" />
-            </a>
-          </div>
+          <ContactBar />
         </div>
         <img src={ProfileImg} alt="" className="profile-img mx-auto my-12 flex items-center" />
       </section>
