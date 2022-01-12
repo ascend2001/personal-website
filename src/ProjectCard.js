@@ -2,8 +2,6 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
 import propTypes from 'prop-types';
 import ProjectModal from './ProjectModal';
 
@@ -41,7 +39,6 @@ function ProjectCard({
         <div className="flex flex-col gap-4 place-items-center place-content-center text-center h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-80 top-0">
           <h3 className="text-lg">{title}</h3>
           <p className="text-base">{subtitle}</p>
-          <FontAwesomeIcon icon={faLink} />
         </div>
       </div>
       <Modal isOpen={displayStatus} onRequestClose={closeModal} style={customStyles}>

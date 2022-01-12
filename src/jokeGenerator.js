@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import laptop from './assets/laptop.svg';
+import minions from './assets/minions.svg';
 import askerSpeech from './assets/asker-speech-bubble.svg';
 import responderSpeech from './assets/responder-speech-bubble.svg';
 
@@ -31,7 +31,7 @@ function JokeGenerator() {
         <div className="speech-bubble-wrapper absolute top-20 left-12 text-lg">
           {jokes[i].asker}
         </div>
-        <img src={laptop} alt="" width="440.5" height="239.5" className="basis-1/3" />
+        <img src={minions} alt="" width="440.5" height="239.5" className="basis-1/3" />
         <div className="flex flex-row place-content-end">
           <img src={responderSpeech} alt="" width="280" height="144.25" className="my-8" />
           <div className="speech-bubble-wrapper absolute bottom-40 right-12 text-lg">
@@ -39,7 +39,7 @@ function JokeGenerator() {
           </div>
         </div>
         <div className="flex flex-row justify-center mb-8">
-          <button type="button" className="jokeButton" onClick={HandleClick}>Another.</button>
+          <button type="button" className="bg-gradient-to-r from-blue-400 to-purple-400 jokeButton text-white ring-offset-purple-100 ring-offset-2 ring-blue-400 ring-4" onClick={HandleClick}>Another</button>
         </div>
       </div>
     </div>

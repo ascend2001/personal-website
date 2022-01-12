@@ -6,11 +6,11 @@ import ExpCard from './ExpCard';
 
 const apprenticeWork = ['Increased sales tracking efficiency by over 70% by automating tracking on commission dashboard using Excel and Zapier.',
   'Led a comparative UI/UX analysis between the companys old website and 10+ other Talent Acquisition Companies with a team of 4 people, consistently communicating and incorporating the decisions made by stakeholders and designers.',
-  'Boosted exposure over 50% by developing a revamped website for the company using React, HTML, CSS, and Node'];
+  'Boosted exposure over 50% by developing a revamped website prototype for the company using React, HTML, CSS, and Node'];
 
 const hussleWork = ['Worked on the development of the beta version of a cross-platform mobile app on a team of 10 developers for clients to offer and buy amateur services.',
   'Augmented a settings interface onto the user profile using React Native, Tab and Stack React Navigation, and Expo APIs.',
-  'Led UI/UX analysis on the current interface and identified 10+ pain points with optimal solutions on a team of 5 people.'];
+  'Performed UI/UX analysis on the current interface and identified 10+ pain points with optimal solutions on a team of 5 people.'];
 
 function ExperienceSection() {
   return (
