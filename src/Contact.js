@@ -6,7 +6,7 @@ import {
 
 function Contact({ color, gapLength }) {
   return (
-    <div className={`flex flex-row justify-center gap-x-${gapLength} mt-12`}>
+    <div className="flex flex-row justify-center mt-12" style={{ columnGap: gapLength }}>
       <a href="https://www.instagram.com/asengupta2001/">
         <AiFillInstagram size="2.5em" color={color} />
       </a>
@@ -24,7 +24,7 @@ function Contact({ color, gapLength }) {
 }
 Contact.defaultProps = {
   color: '',
-  gapLength: '4',
+  gapLength: '1rem',
 };
 
 Contact.propTypes = {

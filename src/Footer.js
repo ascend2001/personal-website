@@ -6,7 +6,7 @@ import bullet from './assets/bullet-grey.svg';
 function Footer() {
   return (
     <footer className="flex flex-col bg-black gap-y-9 py-9">
-      <ContactBar color="grey" gapLength="10" />
+      <ContactBar color="grey" gapLength="2.5rem" />
       <div className="flex flex-row justify-center gap-x-2 items-center grow">
         <FaRegCopyright size="1.0em" color="grey" />
         <div className="text-slate-400 text-lg">Copyright 2020 Avnish Sengupta</div>
