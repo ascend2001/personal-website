@@ -39,7 +39,7 @@ function JokeGenerator() {
           </div>
         </div>
         <div className="flex flex-row justify-center mb-8">
-          <button type="button" className="bg-gradient-to-r from-blue-400 to-purple-400 jokeButton text-white ring-offset-purple-100 ring-offset-2 ring-blue-400 ring-4" onClick={HandleClick}>Another</button>
+          <button type="button" className="bg-gradient-to-r from-blue-400 to-purple-400 jokeButton text-white ring-offset-purple-100 hover:ring-pink-600 ring-offset-2 ring-blue-400 ring-4" onClick={HandleClick}>Another</button>
         </div>
       </div>
     </div>
