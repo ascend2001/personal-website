@@ -26,15 +26,15 @@ function JokeGenerator() {
   }
   return (
     <div className="flex flex-row grow justify-center lg:justify-end">
-      <div className="flex flex-col justify-around relative">
-        <img src={askerSpeech} alt="" width="280" height="144.25" className="my-8" />
-        <div className="speech-bubble-wrapper absolute top-20 left-12 text-lg">
+      <div className="flex flex-col justify-around sm:items-center relative">
+        <img src={askerSpeech} alt="" width="280" height="144.25" className="my-8 lg:mr-40" />
+        <div className="speech-bubble-wrapper absolute lg:left-12 top-20 left-32 text-lg ">
           {jokes[i].asker}
         </div>
         <img src={minions} alt="" width="440.5" height="239.5" className="basis-1/3" />
         <div className="flex flex-row place-content-end">
-          <img src={responderSpeech} alt="" width="280" height="144.25" className="my-8" />
-          <div className="speech-bubble-wrapper absolute bottom-40 right-12 text-lg">
+          <img src={responderSpeech} alt="" width="280" height="144.25" className="my-8 lg:ml-40" />
+          <div className="speech-bubble-wrapper absolute lg:right-12 right-32 bottom-40 text-lg">
             {jokes[i].responder}
           </div>
         </div>

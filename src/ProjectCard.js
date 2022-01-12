@@ -33,10 +33,10 @@ function ProjectCard({
     setDisplayStatus(false);
   }
   return (
-    <div className="relative ring-offset-purple-100 hover:ring-offset-green-100 ring-offset-2 ring-lime-400 hover:ring-purple-700 duration-300 delay-150 ring-4">
-      <img src={image} alt="" className="project-img" />
+    <div className="relative">
+      <img src={image} alt="" className="project-img ring-offset-purple-100 ring-offset-2 ring-lime-400 ring-4" />
       <div onClick={openModal} onKeyPress={openModal} role="button" tabIndex={0}>
-        <div className="flex flex-col gap-4 place-items-center place-content-center text-center h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-80 top-0">
+        <div className="flex flex-col gap-4 place-items-center place-content-center text-center h-52 w-52 bg-black absolute duration-300 delay-150 opacity-0 hover:opacity-80 top-0 ring-offset-green-100  ring-purple-700 duration-300 delay-150 ring-4">
           <h3 className="text-lg">{title}</h3>
           <p className="text-base">{subtitle}</p>
         </div>

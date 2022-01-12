@@ -27,7 +27,7 @@ function ProjectsSection() {
     <section className="flex flex-col lg:flex-row bg-gradient-to-r from-fuchsia-300 to-orange-600" id="Projects">
       <div className="flex flex-col text-white">
         <div className="text-6xl mt-8 ml-4">Projects</div>
-        <div className="ml-32 mt-24 grid grid-cols-2 gap-12">
+        <div className="md:ml-32 mt-24 md:grid md:grid-cols-2 md:gap-12 sm:flex sm:flex-col sm:items-center sm:gap-y-8">
           <ProjectCard timeline="February 2021" work={SmartTherapyWork} role="Lead Front-end Developer" title="Smart Therapy" subtitle="Web Application for users to leave reviews for local therapists!" link="https://github.com/AlexPascadi/therapy-review" image={smartTherapy} />
           <ProjectCard timeline="May 2020" work={ChatTrackerWork} role="Developer" title="Chat Tracker" subtitle="A chat tracker written in C++ that can track user activity on a mock user platform using Binary Trees and Hash maps." link="https://github.com/ascend2001/ChatTracker" image={chatTracker} />
           <ProjectCard timeline="June 2020- August 2020" work={ReactionWork} role="Undergraduate Researcher" title="Reaction Time Experiment" subtitle="A research study using C code and Arduinos to measure Reaction Time to light stimuli vs word stimuli" link="https://github.com/ascend2001/Reaction-Time-Experiment" image={TimeExperiment} />
