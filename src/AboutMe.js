@@ -4,7 +4,7 @@ import ContactBar from './Contact';
 
 function AboutMe() {
   return (
-    <section className="bg-gradient-to-r gap-x-80 to-amber-300 from-orange-500 flex flex-col lg:flex-row text-white gap-x-14" id="AboutMe" name="AboutMe">
+    <section className="bg-gradient-to-r gap-x-80 to-amber-300 from-orange-500 flex flex-col lg:flex-row text-white gap-x-14 aspect-video items-center" id="AboutMe" name="AboutMe">
       <div className="lg:basis-1/2 sm:basis-3/3 flex flex-col mt-6 ml-12">
         <div className="text-6xl mt-8 ml-4">About Me</div>
         <div className="experience-card-company-role text-3xl ml-4 mt-8">
