@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.812e13f2.css",
-    "main.js": "/personal-website/static/js/main.8be1d21a.js",
+    "main.css": "/personal-website/static/css/main.c5779236.css",
+    "main.js": "/personal-website/static/js/main.f3def088.js",
     "static/media/AvnishImg.png": "/personal-website/static/media/AvnishImg.5b79bd13d5d6b28f97f3.png",
     "static/media/NPDatabase.svg": "/personal-website/static/media/NPDatabase.0d29cb375f198565d35ee445c305466f.svg",
     "static/media/minions.svg": "/personal-website/static/media/minions.f2b1321ec6ea1c89c2533b6ff313fcd0.svg",
@@ -37,11 +37,11 @@
     "static/media/asker-speech-bubble.svg": "/personal-website/static/media/asker-speech-bubble.b277e80c27592748b84ddc1115341ab5.svg",
     "static/media/bullet.svg": "/personal-website/static/media/bullet.9d4b46441fb8c9bda96fed475eddb9a2.svg",
     "static/media/bullet-grey.svg": "/personal-website/static/media/bullet-grey.c3456cb113b748ec8d349ef852f12c1d.svg",
-    "main.812e13f2.css.map": "/personal-website/static/css/main.812e13f2.css.map",
-    "main.8be1d21a.js.map": "/personal-website/static/js/main.8be1d21a.js.map"
+    "main.c5779236.css.map": "/personal-website/static/css/main.c5779236.css.map",
+    "main.f3def088.js.map": "/personal-website/static/js/main.f3def088.js.map"
   },
   "entrypoints": [
-    "static/css/main.812e13f2.css",
-    "static/js/main.8be1d21a.js"
+    "static/css/main.c5779236.css",
+    "static/js/main.f3def088.js"
   ]
 }
