@@ -14,7 +14,7 @@ const jokes = [
   },
   {
     asker: 'There are only 10 kinds of people in the world',
-    responder: 'Those that know binary and those that dont',
+    responder: 'Those that know binary and those that don\'t',
   },
 ];
 
