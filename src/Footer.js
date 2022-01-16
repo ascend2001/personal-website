@@ -1,11 +1,17 @@
 import React from 'react';
 import { FaRegCopyright } from 'react-icons/fa';
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import ContactBar from './Contact';
 import bullet from './assets/bullet-grey.svg';
 
+function HandleClick() {
+  const anchor = document.querySelector('#Landing');
+  anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 function Footer() {
   return (
     <footer className="flex flex-col bg-black gap-y-9 py-9">
+      <BsFillArrowUpCircleFill color="white" className="mx-auto -mt-14 " size="2.5em" onClick={HandleClick} />
       <ContactBar color="grey" gapLength="2.5rem" />
       <div className="flex flex-row justify-center gap-x-2 items-center grow">
         <FaRegCopyright size="1.0em" color="grey" />

@@ -18,7 +18,7 @@ function HandleClick(event) {
 
 function MenuBar() {
   return (
-    <header className="h-16 bg-black flex flex-row place-items-center place-content-center justify-center gap-x-16 text-white text-2xl">
+    <header className="h-16 bg-black flex flex-row place-items-center place-content-center justify-center gap-x-16 text-white text-2xl fixed w-full z-10">
       <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToAbout">About</div>
       <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExperience">Experience</div>
       <div className="hover:text-orange-300" onClick={HandleClick} onKeyPress={HandleClick} role="button" tabIndex={0} id="ToExtracurriculars">Extracurriculars</div>

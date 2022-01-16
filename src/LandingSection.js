@@ -5,7 +5,7 @@ import AvnishMoon from './assets/avnish-on-moon.svg';
 function LandingSection() {
   return (
     <div>
-      <section className="initial-wrapper">
+      <section id="Landing">
         <div className="initial-wrapper flex md:flex-row flex-col">
           <div className="flex flex-col md:mb-60 justify-center ml-48 text-white text-6xl font-sans basis-2/3">
             <div className="mb-5 initial-wrapper-text">
