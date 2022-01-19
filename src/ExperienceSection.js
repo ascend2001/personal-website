@@ -16,7 +16,7 @@ function ExperienceSection() {
   return (
     <section className="flex flex-row gap-x-32 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white" id="Experience" name="Experience">
       <div className=" flex flex-col mt-6 ml-12 lg:basis-2/3">
-        <div className="text-6xl mt-8 ml-4">Experiences</div>
+        <div className="text-6xl mt-8">Experience</div>
         <ExpCard imageName={hussleLogo} company="Hussle" work={hussleWork} role="Frontend Engineering Intern" timeline="September 2021 - December 2021" location="Los Angeles, CA" />
         <ExpCard imageName={apprenticeLogo} work={apprenticeWork} company="Apprentice" role="Software Engineering Intern" timeline="August 2021 - October 2021" location="Los Angeles, CA" />
 

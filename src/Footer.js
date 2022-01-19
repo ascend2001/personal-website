@@ -10,10 +10,10 @@ function HandleClick() {
 }
 function Footer() {
   return (
-    <footer className="flex flex-col bg-black gap-y-9 py-9">
-      <BsFillArrowUpCircleFill color="white" className="mx-auto -mt-14 " size="2.5em" onClick={HandleClick} />
+    <footer className="flex flex-col bg-black py-9">
+      <BsFillArrowUpCircleFill color="grey" className="mx-auto" size="2.5em" onClick={HandleClick} />
       <ContactBar color="grey" gapLength="2.5rem" />
-      <div className="flex flex-row justify-center gap-x-2 items-center grow">
+      <div className="flex flex-row justify-center gap-x-2 my-9 items-center grow">
         <FaRegCopyright size="1.0em" color="grey" />
         <div className="text-slate-400 text-lg">Copyright 2020 Avnish Sengupta</div>
         <img src={bullet} alt="" height="10" width="10" className="" />
