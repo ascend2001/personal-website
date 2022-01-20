@@ -1,7 +1,6 @@
 import React from 'react';
 import SkillsChest from './assets/Skills-chest.svg';
 import ExpCard from './ExpCard';
-import bpLogo from './assets/bp-logo.png';
 import dsuLogo from './assets/dsuLogo.png';
 import uclaLogo from './assets/uclaLogo.png';
 import IEEELogo from './assets/IEEELogo.png';
@@ -21,15 +20,8 @@ function ExtracurricularSection() {
       <div className="lg:basis-2/3 sm:basis-3/3 mt-6 ml-12 flex flex-col">
         <div className="text-6xl mt-8">Extracurriculars</div>
         <div className="flex flex-col">
-          <ExpCard imageName={bpLogo} company="LA Blueprint" role="Incoming Full-Stack Developer" timeline="January 2022" location="Los Angeles, CA" />
-          <ExpCard imageName={dsuLogo} company="Data Science Union" role="Incoming Data Analyst" timeline="January 2022" location="Los Angeles, CA" />
+          <ExpCard imageName={dsuLogo} company="Data Science Union" role="Incoming Data Analyst" timeline="February 2022" location="Los Angeles, CA" />
           <ExpCard imageName={uclaLogo} work={LAWork} company="Undergraduate Learning Assistant Program at UCLA" role="Math 31AL Learning Assistant" timeline="September 2021 - December 2021" location="Los Angeles, CA" />
-          {/* <ExpCard
-            imageName={DMLogo}
-            company="Datamatch at UCLA"
-            role="Vice President of Social Affairs"
-            timeline="June 2021 - Present"
-            location="Los Angeles, CA" /> */}
           <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Los Angeles, CA" />
         </div>
       </div>
