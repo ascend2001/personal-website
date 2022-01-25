@@ -1,10 +1,12 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { GoMarkGithub } from 'react-icons/go';
+import { SiDevpost } from 'react-icons/si';
+import { BsYoutube } from 'react-icons/bs';
 import bullet from './assets/bullet.svg';
 
 function ProjectModal({
-  imageName, title, timeline, work, role, link,
+  imageName, title, timeline, work, role, link, devlink, youtubelink,
 }) {
   return (
     <div className="flex flex-col my-6 bg-stone-900 text-white">
@@ -17,6 +19,16 @@ function ProjectModal({
             <a href={link}>
               <GoMarkGithub />
             </a>
+            {devlink && (
+            <a href={devlink}>
+              <SiDevpost />
+            </a>
+            )}
+            {youtubelink && (
+            <a href={youtubelink}>
+              <BsYoutube />
+            </a>
+            )}
           </div>
         </div>
         <div className="flex flex-col text-right ml-36 sm:mr-12 justify-end">
@@ -39,6 +51,8 @@ function ProjectModal({
 
 ProjectModal.defaultProps = {
   work: [],
+  devlink: '',
+  youtubelink: '',
 };
 ProjectModal.propTypes = {
   imageName: propTypes.string.isRequired,
@@ -47,6 +61,8 @@ ProjectModal.propTypes = {
   work: propTypes.arrayOf(propTypes.string),
   role: propTypes.string.isRequired,
   link: propTypes.string.isRequired,
+  devlink: propTypes.string,
+  youtubelink: propTypes.string,
 };
 
 export default ProjectModal;
