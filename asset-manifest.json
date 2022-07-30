@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.77ad26c9.css",
-    "main.js": "/personal-website/static/js/main.eeb995c8.js",
+    "main.css": "/personal-website/static/css/main.bd7f5e69.css",
+    "main.js": "/personal-website/static/js/main.1e74c6b3.js",
     "static/media/AvnishImg.png": "/personal-website/static/media/AvnishImg.5b79bd13d5d6b28f97f3.png",
     "static/media/NPDatabase.svg": "/personal-website/static/media/NPDatabase.0d29cb375f198565d35ee445c305466f.svg",
     "static/media/minions.svg": "/personal-website/static/media/minions.f2b1321ec6ea1c89c2533b6ff313fcd0.svg",
     "static/media/Skills-chest.svg": "/personal-website/static/media/Skills-chest.ba4f061430ba1286015a970cfa2be1e0.svg",
+    "static/media/tck-logo.svg": "/personal-website/static/media/tck-logo.cf70ce79763f91375706d540b35bfaef.svg",
     "static/media/icon-logo.svg": "/personal-website/static/media/icon-logo.b1c901e42e2eb4f0ebc6dc022e9a8bd3.svg",
     "static/media/RedHatText-LightItalic.ttf": "/personal-website/static/media/RedHatText-LightItalic.c31c9b1adbf1e69c5681.ttf",
     "static/media/RedHatText-Light.ttf": "/personal-website/static/media/RedHatText-Light.85dc5d29af25f4bc0d7b.ttf",
@@ -16,6 +17,7 @@
     "static/media/ChatTracker.svg": "/personal-website/static/media/ChatTracker.2feec57f35c1f2a0b53268a6a914893f.svg",
     "static/media/Rambla-Regular.ttf": "/personal-website/static/media/Rambla-Regular.1b5c1892470d6d7fe1e2.ttf",
     "static/media/RedHatText-LightItalic.woff": "/personal-website/static/media/RedHatText-LightItalic.a891560bfcf8e269c28a.woff",
+    "static/media/oracle-img.svg": "/personal-website/static/media/oracle-img.c68203ad3bfe2f52b8ab1960db9931c4.svg",
     "static/media/RedHatText-Regular.woff": "/personal-website/static/media/RedHatText-Regular.a27fc60ef1e4d21d4237.woff",
     "static/media/RedHatText-Light.woff": "/personal-website/static/media/RedHatText-Light.16fc18ce8f85743b4cc1.woff",
     "static/media/RedHatText-Bold.woff": "/personal-website/static/media/RedHatText-Bold.f42328fc614580935130.woff",
@@ -24,7 +26,6 @@
     "static/media/RedHatText-Regular.woff2": "/personal-website/static/media/RedHatText-Regular.1464ad14554e49e404b2.woff2",
     "static/media/RedHatText-Bold.woff2": "/personal-website/static/media/RedHatText-Bold.5e510e10f5cecb0e4ad2.woff2",
     "static/media/RedHatText-Light.woff2": "/personal-website/static/media/RedHatText-Light.a6ed4a0a827d70005e56.woff2",
-    "static/media/dsuLogo.png": "/personal-website/static/media/dsuLogo.a439fb6fd56f0f078a5e.png",
     "static/media/Rambla-Regular.woff": "/personal-website/static/media/Rambla-Regular.64d5a7aa757439876a85.woff",
     "static/media/IEEELogo.png": "/personal-website/static/media/IEEELogo.96235915f7223c94ea1c.png",
     "static/media/Rambla-Regular.woff2": "/personal-website/static/media/Rambla-Regular.c953e4dca0f9ba84c6db.woff2",
@@ -38,11 +39,11 @@
     "static/media/asker-speech-bubble.svg": "/personal-website/static/media/asker-speech-bubble.b277e80c27592748b84ddc1115341ab5.svg",
     "static/media/bullet.svg": "/personal-website/static/media/bullet.9d4b46441fb8c9bda96fed475eddb9a2.svg",
     "static/media/bullet-grey.svg": "/personal-website/static/media/bullet-grey.c3456cb113b748ec8d349ef852f12c1d.svg",
-    "main.77ad26c9.css.map": "/personal-website/static/css/main.77ad26c9.css.map",
-    "main.eeb995c8.js.map": "/personal-website/static/js/main.eeb995c8.js.map"
+    "main.bd7f5e69.css.map": "/personal-website/static/css/main.bd7f5e69.css.map",
+    "main.1e74c6b3.js.map": "/personal-website/static/js/main.1e74c6b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ad26c9.css",
-    "static/js/main.eeb995c8.js"
+    "static/css/main.bd7f5e69.css",
+    "static/js/main.1e74c6b3.js"
   ]
 }
