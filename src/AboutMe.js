@@ -8,7 +8,7 @@ function AboutMe() {
       <div className="lg:basis-1/2 sm:basis-3/3 flex flex-col mt-6 ml-12">
         <div className="text-6xl mt-8 ml-4">About Me</div>
         <div className="experience-card-company-role text-3xl ml-4 mt-8">
-          I am a rising Junior at UCLA, majoring in Computer Science! I like solving problems,
+          I am a rising Senior at UCLA, majoring in Computer Science! I like solving problems,
           through technology and building products to help the world.
           I am fascinated by and interested in pursuing full-stack development,
           data engineering, and learning new ways to create things. When I am not coding,
