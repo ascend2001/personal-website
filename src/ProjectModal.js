@@ -37,7 +37,7 @@ function ProjectModal({
             </a>
             )}
             {livelink && (
-            <a href={youtubelink}>
+            <a href={livelink}>
               <FaLink />
             </a>
             )}

@@ -1,5 +1,4 @@
 import React from 'react';
-import JokeGenerator from './jokeGenerator';
 import ProjectCard from './ProjectCard';
 import smartTherapy from './assets/smart-therapy.svg';
 import chatTracker from './assets/ChatTracker.svg';
@@ -52,7 +51,6 @@ function ProjectsSection() {
           <ProjectCard timeline="November 2021" work={DbWork} role="Developer" title="Nobel Prize Database" subtitle="A web based JSON API to search Nobel Prizes and laureates, their affiliations, dates, and place of birth." link="https://github.com/ascend2001/NobelPrizeDb" image={NPDatabase} />
         </div>
       </div>
-      <JokeGenerator />
     </section>
   );
 }
