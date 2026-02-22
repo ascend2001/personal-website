@@ -1,23 +1,25 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { GoMarkGithub } from 'react-icons/go';
+import { IoLogoGithub } from 'react-icons/io5';
 import { SiDevpost } from 'react-icons/si';
 import { BsYoutube } from 'react-icons/bs';
+import { FaLink } from 'react-icons/fa';
+import blueprintWhite from './assets/blueprint-logo-white.svg';
 import bullet from './assets/bullet.svg';
 
 function ProjectModal({
-  imageName, title, timeline, work, role, link, devlink, youtubelink,
+  imageName, title, timeline, work, role, link, devlink, youtubelink, blueprintlink, livelink,
 }) {
   return (
     <div className="flex flex-col my-6 bg-stone-900 text-white">
-      <div className="flex flex-row place-items-center mx-auto">
+      <div className="flex flex-row place-items-center">
         <img src={imageName} alt="" width="75" height="75" />
         <div className="flex flex-col ml-6 justify-end grow">
           <div className="experience-card-company-name text-4xl">{title}</div>
           <div className="experience-card-company-role text-2xl flex flex-row gap-x-4 place-items-center">
             {role}
             <a href={link}>
-              <GoMarkGithub />
+              <IoLogoGithub />
             </a>
             {devlink && (
             <a href={devlink}>
@@ -29,13 +31,23 @@ function ProjectModal({
               <BsYoutube />
             </a>
             )}
+            {blueprintlink && (
+            <a href={blueprintlink} aria-label="Link to blog post">
+              <img src={blueprintWhite} alt="LA Blueprint Logo" width="24" height="24" />
+            </a>
+            )}
+            {livelink && (
+            <a href={youtubelink}>
+              <FaLink />
+            </a>
+            )}
           </div>
         </div>
         <div className="flex flex-col text-right ml-36 sm:mr-12 justify-end">
           <div className="experience-card-company-duration text-xl">{timeline}</div>
         </div>
       </div>
-      <div className="flex flex-col mt-7 mx-auto">
+      <div className="flex flex-col mt-7">
         { work.map((element) => (
           <div key={element} className="flex flex-row ml-12 items-start my-1.5">
             <img src={bullet} alt="" height="10" width="10" className="mt-2" />
@@ -53,6 +65,8 @@ ProjectModal.defaultProps = {
   work: [],
   devlink: '',
   youtubelink: '',
+  blueprintlink: '',
+  livelink: '',
 };
 ProjectModal.propTypes = {
   imageName: propTypes.string.isRequired,
@@ -63,6 +77,8 @@ ProjectModal.propTypes = {
   link: propTypes.string.isRequired,
   devlink: propTypes.string,
   youtubelink: propTypes.string,
+  blueprintlink: propTypes.string,
+  livelink: propTypes.string,
 };
 
 export default ProjectModal;

@@ -7,6 +7,7 @@ import TimeExperiment from './assets/TimeExperiment.svg';
 import NPDatabase from './assets/NPDatabase.svg';
 import stdetector from './assets/icon-logo.svg';
 import TCKLogo from './assets/tck-logo.svg';
+import FOTCApp from './assets/fotc.png';
 
 const SmartTherapyWork = ['Coordinated a team of 5 people to create a full-stack web application for users to leave reviews on local therapists.',
   'Utilized React, HTML, JavaScript, and CSS to create the frontend interface with login functionality, filtered search, anonymous reviews, dynamically updated ratings, creating accounts, adding favorites, and used React Router to connect all webpages.',
@@ -32,13 +33,18 @@ const TCKWork = ['Partnered with The Conscious Kid to create a web anti-racism e
   'Used Airtable as a backend database, created the author and illustrator profile interfaces, searching and filtering functionality, the recommendation quiz interface, and a styled component library using React, React Router, Swiper API, and MaterialUI.',
   'Delegated developer tasks using the Agile Methodology and presented our work at tri-monthly checkpoints through internal demo days'];
 
+const FOTCWork = ['Partnered with Friends of The Children to create a user-friendly and streamlined communication system to improve collaboration and information sharing between mentors, administrators, and caregivers.',
+  'Created module filesystem containing links and resources, calendar with upcoming events, auth login, announcements wall and profile pages using React and React Router and handled login and user role global states using Redux.',
+  'Built text/email system for admin to send reminders and announcements using Mailchimp API and setup noSQL database using Firebase to store admin and caregiver profiles, modules, notices and events.'];
+
 function ProjectsSection() {
   return (
-    <section className="flex flex-col lg:flex-row bg-gradient-to-r from-fuchsia-300 to-orange-600" id="Projects">
+    <section className="flex flex-col lg:flex-row bg-gradient-to-r from-fuchsia-300 to-orange-600 py-10" id="Projects">
       <div className="flex flex-col text-white">
         <div className="text-6xl mt-8 ml-4">Projects</div>
         <div className="md:ml-32 mt-24 md:grid md:grid-cols-3 lg:gap-12 sm:flex sm:flex-col sm:items-center sm:gap-y-8">
-          <ProjectCard timeline="January 2022 - June 2022" work={TCKWork} role="Full-Stack Developer" title="The Conscious Kid Non Profit Web App" subtitle="An online anti-racism education and resource hub for educators and children!" link="https://github.com/lablueprint/tck-web-app" image={TCKLogo} />
+          <ProjectCard timeline="January 2023 - June 2023" work={FOTCWork} role="Full-Stack Developer" title="Friends of The Children Non Profit Web App" subtitle="A user-friendly communication system to improve information sharing between administrators and caregivers!" link="https://github.com/lablueprint/friends-of-the-children" blueprintlink="https://lablueprint.org/projects/fotc" livelink="https://friends-of-the-children-gamma.vercel.app/" image={FOTCApp} />
+          <ProjectCard timeline="January 2022 - June 2022" work={TCKWork} role="Full-Stack Developer" title="The Conscious Kid Non Profit Web App" subtitle="An online anti-racism education and resource hub for educators and children!" link="https://github.com/lablueprint/tck-web-app" blueprintlink="https://lablueprint.org/projects/tck" livelink="https://tck-web-app.herokuapp.com/" image={TCKLogo} />
           <ProjectCard timeline="January 2022" work={STDWork} role="Full-Stack Developer" title="STDetector" subtitle="Winning Hack of QWER Hacks 2022! A mobile app to track your sexual health and to share it with prospective partners!" youtubelink="https://www.youtube.com/watch?v=tvQJHaNVfGo" devlink="https://devpost.com/software/stdetector" link="https://github.com/faizahsayyid/qwerhacks2022" image={stdetector} />
           <ProjectCard timeline="February 2021" work={SmartTherapyWork} role="Lead Front-end Developer" title="Smart Therapy" subtitle="Web Application for users to leave reviews for local therapists!" link="https://github.com/AlexPascadi/therapy-review" image={smartTherapy} />
           <ProjectCard timeline="May 2020" work={ChatTrackerWork} role="Developer" title="Chat Tracker" subtitle="A chat tracker written in C++ that can track user activity on a mock user platform using Binary Trees and Hash maps." link="https://github.com/ascend2001/ChatTracker" image={chatTracker} />

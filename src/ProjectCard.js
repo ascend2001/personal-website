@@ -23,7 +23,7 @@ const customStyles = {
 };
 
 function ProjectCard({
-  image, title, subtitle, link, work, timeline, role, devlink, youtubelink,
+  image, title, subtitle, link, work, timeline, role, devlink, youtubelink, blueprintlink, livelink,
 }) {
   const [displayStatus, setDisplayStatus] = useState(false);
   function openModal() {
@@ -51,6 +51,8 @@ function ProjectCard({
           link={link}
           devlink={devlink}
           youtubelink={youtubelink}
+          blueprintlink={blueprintlink}
+          livelink={livelink}
         />
       </Modal>
     </div>
@@ -67,11 +69,15 @@ ProjectCard.propTypes = {
   role: propTypes.string.isRequired,
   devlink: propTypes.string,
   youtubelink: propTypes.string,
+  blueprintlink: propTypes.string,
+  livelink: propTypes.string,
 };
 
 ProjectCard.defaultProps = {
   devlink: '',
   youtubelink: '',
+  blueprintlink: '',
+  livelink: '',
 };
 
 export default ProjectCard;
