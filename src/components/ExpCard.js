@@ -1,7 +1,7 @@
 import React from 'react';
 
 import propTypes from 'prop-types';
-import bullet from './assets/bullet.svg';
+import bullet from '../assets/bullet.svg';
 
 function ExpCard({
   imageName, company, role, timeline, location, work,

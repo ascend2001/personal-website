@@ -164,7 +164,7 @@
 }
 
 .initial-wrapper{
-    background:url(./assets/stars.svg),  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(29, 29, 67, 0.5) 100%), linear-gradient(180deg, #1D1D43 0%, #CE751D 100%);;
+    background:url(./assets/stars.svg),  #1D1D43;
     height:48rem;
 }
 

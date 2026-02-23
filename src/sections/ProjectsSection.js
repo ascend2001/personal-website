@@ -1,12 +1,12 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
-import smartTherapy from './assets/smart-therapy.svg';
-import chatTracker from './assets/ChatTracker.svg';
-import TimeExperiment from './assets/TimeExperiment.svg';
-import NPDatabase from './assets/NPDatabase.svg';
-import stdetector from './assets/icon-logo.svg';
-import TCKLogo from './assets/tck-logo.svg';
-import FOTCApp from './assets/fotc.png';
+import ProjectCard from '../components/ProjectCard';
+import smartTherapy from '../assets/smart-therapy.svg';
+import chatTracker from '../assets/ChatTracker.svg';
+import TimeExperiment from '../assets/TimeExperiment.svg';
+import NPDatabase from '../assets/NPDatabase.svg';
+import stdetector from '../assets/icon-logo.svg';
+import TCKLogo from '../assets/tck-logo.svg';
+import FOTCApp from '../assets/fotc.png';
 
 const SmartTherapyWork = ['Coordinated a team of 5 people to create a full-stack web application for users to leave reviews on local therapists.',
   'Utilized React, HTML, JavaScript, and CSS to create the frontend interface with login functionality, filtered search, anonymous reviews, dynamically updated ratings, creating accounts, adding favorites, and used React Router to connect all webpages.',

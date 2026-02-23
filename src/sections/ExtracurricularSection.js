@@ -1,9 +1,9 @@
 import React from 'react';
-import SkillsChest from './assets/Skills-chest.svg';
-import ExpCard from './ExpCard';
-import uclaLogo from './assets/uclaLogo.png';
-import IEEELogo from './assets/IEEELogo.png';
-import bpLogo from './assets/bp-logo.png';
+import SkillsChest from '../assets/Skills-chest.svg';
+import ExpCard from '../components/ExpCard';
+import uclaLogo from '../assets/uclaLogo.png';
+import IEEELogo from '../assets/IEEELogo.png';
+import bpLogo from '../assets/bp-logo.png';
 // import DMLogo from './assets/datamatchLogo.png';
 // import transparent from './assets/transparent.png';
 

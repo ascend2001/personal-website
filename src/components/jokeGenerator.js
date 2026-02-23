@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import minions from './assets/minions.svg';
-import askerSpeech from './assets/asker-speech-bubble.svg';
-import responderSpeech from './assets/responder-speech-bubble.svg';
+import minions from '../assets/minions.svg';
+import askerSpeech from '../assets/asker-speech-bubble.svg';
+import responderSpeech from '../assets/responder-speech-bubble.svg';
 
 const jokes = [
   {

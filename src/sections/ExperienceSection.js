@@ -1,8 +1,8 @@
 import React from 'react';
-import leaningMan from './assets/leaning-man.svg';
-import hussleLogo from './assets/hussle-logo.png';
-import oracleLogo from './assets/oracle-img.svg';
-import ExpCard from './ExpCard';
+import leaningMan from '../assets/leaning-man.svg';
+import hussleLogo from '../assets/hussle-logo.png';
+import oracleLogo from '../assets/oracle-img.svg';
+import ExpCard from '../components/ExpCard';
 
 const hussleWork = ['Worked on the development of the beta version of a cross-platform mobile app on a team of 10 developers for clients to offer and buy amateur services.',
   'Augmented a settings interface onto the user profile using React Native, Tab and Stack React Navigation, and Expo APIs.',

@@ -4,8 +4,8 @@ import { IoLogoGithub } from 'react-icons/io5';
 import { SiDevpost } from 'react-icons/si';
 import { BsYoutube } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
-import blueprintWhite from './assets/blueprint-logo-white.svg';
-import bullet from './assets/bullet.svg';
+import blueprintWhite from '../assets/blueprint-logo-white.svg';
+import bullet from '../assets/bullet.svg';
 
 function ProjectModal({
   imageName, title, timeline, work, role, link, devlink, youtubelink, blueprintlink, livelink,

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaRegCopyright } from 'react-icons/fa';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import ContactBar from './Contact';
-import bullet from './assets/bullet-grey.svg';
+import bullet from '../assets/bullet-grey.svg';
 
 function HandleClick() {
   const anchor = document.querySelector('#Landing');

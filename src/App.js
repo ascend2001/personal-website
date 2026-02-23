@@ -1,11 +1,11 @@
 import React from 'react';
-import ExperienceSection from './ExperienceSection';
-import ExtracurricularSection from './ExtracurricularSection';
-import LandingSection from './LandingSection';
-import MenuBar from './MenuBar';
-import ProjectsSection from './ProjectsSection';
-import Footer from './Footer';
-import AboutMe from './AboutMe';
+import ExperienceSection from './sections/ExperienceSection';
+import ExtracurricularSection from './sections/ExtracurricularSection';
+import LandingSection from './sections/LandingSection';
+import MenuBar from './components/MenuBar';
+import ProjectsSection from './sections/ProjectsSection';
+import Footer from './components/Footer';
+import AboutMe from './sections/AboutMe';
 
 function App() {
   return (
