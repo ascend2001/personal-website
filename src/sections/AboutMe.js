@@ -34,7 +34,7 @@ function AboutMe() {
         <h2 className="text-4xl font-heading font-black text-text-dark mb-4">
           More Than Just Code
         </h2>
-        <p className="text-xl text-text-muted max-w-2xl mx-auto">
+        <p className="text-xl text-text-muted max-w-2xl mx-auto ">
           I believe the best digital products are born at the intersection
           of social welfare and innovation.
         </p>
@@ -43,7 +43,7 @@ function AboutMe() {
         <div className="md:col-span-6">
           <AboutMeCard className="flex flex-col justify-center">
             <h3 className="text-2xl font-heading font-bold mb-4 text-text-dark">
-              About Me
+              &gt; cat ~/about_me.txt
             </h3>
             <p className="text-text-muted text-lg mb-6 leading-relaxed">
               I am currently working as a software engineer at Oracle, building B2B software
@@ -94,9 +94,9 @@ function AboutMe() {
           transition={{
             duration: 0.8,
           }}
-          className="md:col-span-3 m-auto w-80 h-80 rounded-full shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
+          className="md:col-span-3 m-auto w-80 h-80 rounded-xl shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
         >
-          <img src={ProfileImg} alt="" className="profile-img mx-auto flex items-center" />
+          <img src={ProfileImg} alt="" className="profile-img mx-auto flex items-center mt-10" />
         </motion.div>
       </div>
     </section>

@@ -63,7 +63,7 @@ ProjectCard.propTypes = {
   image: propTypes.string.isRequired,
   title: propTypes.string.isRequired,
   subtitle: propTypes.string.isRequired,
-  link: propTypes.string.isRequired,
+  link: propTypes.string,
   work: propTypes.arrayOf(propTypes.string).isRequired,
   timeline: propTypes.string.isRequired,
   role: propTypes.string.isRequired,
@@ -74,6 +74,7 @@ ProjectCard.propTypes = {
 };
 
 ProjectCard.defaultProps = {
+  link: '',
   devlink: '',
   youtubelink: '',
   blueprintlink: '',

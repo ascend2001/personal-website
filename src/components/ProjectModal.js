@@ -18,9 +18,11 @@ function ProjectModal({
           <div className="experience-card-company-name text-4xl">{title}</div>
           <div className="experience-card-company-role text-2xl flex flex-row gap-x-4 place-items-center">
             {role}
+            {link && (
             <a href={link}>
               <IoLogoGithub />
             </a>
+            )}
             {devlink && (
             <a href={devlink}>
               <SiDevpost />
