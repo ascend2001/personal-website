@@ -4,8 +4,8 @@ import { IoLogoGithub } from 'react-icons/io5';
 import { SiDevpost } from 'react-icons/si';
 import { BsYoutube } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
-import blueprintWhite from './assets/blueprint-logo-white.svg';
-import bullet from './assets/bullet.svg';
+import blueprintWhite from '../assets/blueprint-logo-white.svg';
+import bullet from '../assets/bullet.svg';
 
 function ProjectModal({
   imageName, title, timeline, work, role, link, devlink, youtubelink, blueprintlink, livelink,
@@ -18,9 +18,11 @@ function ProjectModal({
           <div className="experience-card-company-name text-4xl">{title}</div>
           <div className="experience-card-company-role text-2xl flex flex-row gap-x-4 place-items-center">
             {role}
+            {link && (
             <a href={link}>
               <IoLogoGithub />
             </a>
+            )}
             {devlink && (
             <a href={devlink}>
               <SiDevpost />
