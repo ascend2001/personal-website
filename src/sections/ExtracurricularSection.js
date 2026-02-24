@@ -17,7 +17,7 @@ function ExtracurricularSection() {
   const closeModal = useCallback(() => setDisplayStatus(false), []);
 
   return (
-    <section className="flex bg-midnight flex-row gap-x-16 text-white py-20" id="Extracurriculars" name="Extracurriculars">
+    <section className="px-20 flex bg-midnight flex-row gap-x-16 text-white py-20" id="Extracurriculars" name="Extracurriculars">
       <div className="mt-6 ml-12 flex flex-col">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-heading font-black mb-4">

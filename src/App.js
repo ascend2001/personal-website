@@ -5,7 +5,7 @@ import LandingSection from './sections/LandingSection';
 import MenuBar from './components/MenuBar';
 import ProjectsSection from './sections/ProjectsSection';
 import Footer from './components/Footer';
-import AboutMe from './sections/AboutMe';
+import AboutMeSection from './sections/AboutMeSection';
 import SkillsSection from './sections/SkillsSection';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div className="flex flex-col select-none">
       <MenuBar />
       <LandingSection />
-      <AboutMe />
+      <AboutMeSection />
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />

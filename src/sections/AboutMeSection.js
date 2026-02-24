@@ -27,7 +27,7 @@ const stats = [
   },
 ];
 
-function AboutMe() {
+function AboutMeSection() {
   return (
     <section className="flex flex-col bg-lavender-dark text-text-dark pt-8 pb-20 px-10">
       <div className="text-center my-16">
@@ -94,7 +94,7 @@ function AboutMe() {
           transition={{
             duration: 0.8,
           }}
-          className="md:col-span-3 m-auto w-80 h-80 rounded-xl shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
+          className="hidden md:flex md:col-span-3 m-auto w-80 h-80 rounded-xl shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
         >
           <img src={ProfileImg} alt="" className="profile-img mx-auto flex items-center mt-10" />
         </motion.div>
@@ -104,4 +104,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default AboutMeSection;

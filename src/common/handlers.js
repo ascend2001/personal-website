@@ -10,7 +10,7 @@ export function HandleClick(event) {
     const anchor = document.querySelector('#Projects');
     anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else if (event.target.id === 'ToAbout') {
-    const anchor = document.querySelector('#AboutMe');
+    const anchor = document.querySelector('#AboutMeSection');
     anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
