@@ -57,8 +57,12 @@ const experiences = [
 ];
 
 function ExperienceSection() {
+  const [modalData, setModalData] = useState(null);
   const [displayStatus, setDisplayStatus] = useState(false);
-  const openModal = useCallback(() => setDisplayStatus(true), []);
+  const openModal = useCallback((data) => {
+    setModalData(data);
+    setDisplayStatus(true);
+  }, []);
   const closeModal = useCallback(() => setDisplayStatus(false), []);
 
   return (
@@ -93,7 +97,7 @@ function ExperienceSection() {
                   delay: index * 0.1,
                   duration: 0.5,
                 }}
-                onClick={openModal}
+                onClick={() => openModal(exp)}
               >
                 <div className="relative pl-8 border-l-4 border-lavender-dark h-full py-2">
                   <div className="absolute -left-[11px] top-2 w-5 h-5 rounded-full bg-coral border-4 border-white shadow-sm" />
@@ -122,15 +126,18 @@ function ExperienceSection() {
                   </AboutMeCard>
                 </div>
               </motion.div>
-              <Modal isOpen={displayStatus} onRequestClose={closeModal} style={customStyles}>
-                <ProjectModal
-                  imageName={exp.image}
-                  title={exp.company}
-                  timeline={exp.year}
-                  work={exp.work}
-                  role={exp.role}
-                />
-              </Modal>
+              {modalData
+                  && (
+                  <Modal isOpen={displayStatus} onRequestClose={closeModal} style={customStyles}>
+                    <ProjectModal
+                      imageName={modalData.image}
+                      title={modalData.company}
+                      timeline={modalData.year}
+                      work={modalData.work}
+                      role={modalData.role}
+                    />
+                  </Modal>
+                  )}
             </>
 
           ))}
