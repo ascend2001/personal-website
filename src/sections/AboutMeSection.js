@@ -61,7 +61,7 @@ function AboutMeSection() {
             <ContactBar />
           </Card>
         </div>
-        <div className="md:col-span-3 my-auto max-w-sm space-y-8">
+        <div className="lg:col-span-3 sm:col-span-6 my-auto max-w-sm space-y-8">
           {stats.map((stat) => (
             <Card
               key={uuidv4()}
@@ -94,9 +94,9 @@ function AboutMeSection() {
           transition={{
             duration: 0.8,
           }}
-          className="hidden md:flex md:col-span-3 m-auto w-80 h-80 rounded-xl shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
+          className="hidden lg:flex lg:col-span-3 m-auto aspect-square rounded-xl shadow-2xl border-8 border-white flex items-center justify-center overflow-hidden"
         >
-          <img src={ProfileImg} alt="" className="profile-img mx-auto flex items-center mt-10" />
+          <img src={ProfileImg} alt="" className="profile-img mx-auto object-scale-down flex items-center mt-10" />
         </motion.div>
       </div>
     </section>
