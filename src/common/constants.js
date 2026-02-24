@@ -7,6 +7,7 @@ import oracleLogo from '../assets/oracle-img.svg';
 import FOTCApp from '../assets/fotc.png';
 import TCKLogo from '../assets/tck-logo.svg';
 import stdetector from '../assets/icon-logo.svg';
+import mlbThumbnail from '../assets/baseball.png';
 import smartTherapy from '../assets/smart-therapy.svg';
 import chatTracker from '../assets/ChatTracker.svg';
 import TimeExperiment from '../assets/TimeExperiment.svg';
@@ -137,6 +138,10 @@ const FOTCWork = ['Partnered with Friends of The Children to create a user-frien
   'Created module filesystem containing links and resources, calendar with upcoming events, auth login, announcements wall and profile pages using React and React Router and handled login and user role global states using Redux.',
   'Built text/email system for admin to send reminders and announcements using Mailchimp API and setup noSQL database using Firebase to store admin and caregiver profiles, modules, notices and events.'];
 
+const MLBWork = ['Built an end-to-end Python data pipeline (web scraping, cleaning, feature engineering) using data from Baseball-Reference.com to enable predictive modeling of Major League Baseball playoff outcomes.',
+  'Conducted EDA and trained machine learning models on hitting, pitching, and fielding metrics to identify key performance drivers and improve playoff prediction accuracy.',
+  'Developed interactive dashboards (Tableau) and documentation to communicate insights, operationalize results, and support data-driven decision-making for stakeholders.'];
+
 export const Projects = [
   {
     title: 'Friends of The Children Non-Profit Web App',
@@ -172,6 +177,7 @@ export const Projects = [
     title: 'STDetector',
     displayTitle: 'STDetector',
     description: 'Winning Hack of QWER Hacks 2022! A mobile app to track your sexual health and to share it with prospective partners!',
+    impact: 'Placed first in the Health and Wellness track of QWER Hacks, and won Most Innovative Project sponsored by the CIA.',
     tags: ['React Native', 'Expo', 'Airtable', 'Cloudinary'],
     color: 'bg-yellow/20',
     work: STDWork,
@@ -195,11 +201,23 @@ export const Projects = [
     role: 'Front-End Developer',
   },
   {
+    title: 'MLB Playoff Prediction Engine',
+    displayTitle: 'Major League Baseball',
+    description: 'End-to-end ML system forecasting MLB playoff outcomes from real-world data.',
+    tags: ['Tableau', 'PyTorch', 'Scikit-Learn'],
+    color: 'bg-sky/10',
+    work: MLBWork,
+    link: 'https://github.com/the-data-science-union/DSU-S2022-MLB',
+    image: mlbThumbnail,
+    timeline: 'August 2022',
+    role: 'Front-End Developer',
+  },
+  {
     title: 'Chat Tracker',
     displayTitle: 'Chat Tracker',
     description: 'A chat tracker written in C++ that can track user activity on a mock user platform.',
     tags: ['C++', 'Binary Trees', 'Hash Maps'],
-    color: 'bg-purple-100',
+    color: 'bg-coral/10',
     work: ChatTrackerWork,
     link: 'https://github.com/ascend2001/ChatTracker',
     image: chatTracker,
@@ -211,7 +229,7 @@ export const Projects = [
     displayTitle: 'Reaction Time',
     description: 'A research study using C code and Arduinos to measure Reaction Time to light stimuli vs word stimuli',
     tags: ['C', 'Arduino', 'Ultrasonic Sensors', 'SciPy'],
-    color: 'bg-purple-100',
+    color: 'bg-yellow/20',
     work: ReactionWork,
     link: 'https://github.com/ascend2001/Reaction-Time-Experiment',
     image: TimeExperiment,
