@@ -22,6 +22,13 @@ object-assign
  * http://api.jqueryui.com/category/ui-core/
  */
 
+/**
+ * @license lucide-react v0.575.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
