@@ -16,7 +16,7 @@ const stats = [
   {
     icon: HeartIcon,
     label: 'Projects Loved',
-    value: '40+',
+    value: '20+',
     color: 'text-coral',
   },
   {

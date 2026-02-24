@@ -20,7 +20,7 @@ const bpwork = ['Directing organization-wide funding efforts by building a fundi
 
 function ExtracurricularSection() {
   return (
-    <section className="flex bg-gradient-to-r from-cyan-500 to-blue-500 flex-row gap-x-16 text-white" id="Extracurriculars" name="Extracurriculars">
+    <section className="flex bg-midnight flex-row gap-x-16 text-white" id="Extracurriculars" name="Extracurriculars">
       <div className="lg:basis-2/3 sm:basis-3/3 mt-6 ml-12 flex flex-col">
         <div className="text-6xl mt-8">Extracurriculars</div>
         <div className="flex flex-col">

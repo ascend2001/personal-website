@@ -42,7 +42,7 @@ const experiences = [
     description:
             'Full-stack engineer delivering DB migrations, analytics pipelines, and UI features across distributed systems serving 700K+ customers.',
     work: OracleWork,
-    tags: ['React', 'TypeScript', 'Design Systems'],
+    tags: ['React', 'Java', 'JUnit', 'GraphQL', 'Dropwizard', 'Nomad', 'Flyway', 'Python', 'Oozie'],
   },
   {
     year: 'June 2022 - September 2022',
@@ -52,7 +52,7 @@ const experiences = [
     description:
             'Built a MERN-stack energy insights web app with personalized decarbonization recommendations and carbon footprint calculator for 1M+ users',
     work: OracleInternWork,
-    tags: ['Figma', 'Next.js', 'Motion'],
+    tags: ['React', 'Node.js', 'Express.js', 'Flask', 'MongoDB'],
   },
 ];
 
@@ -76,7 +76,7 @@ function ExperienceSection() {
         </p>
       </div>
       <div className="flex flex-row">
-        <div className="flex flex-col">
+        <div className="flex flex-col basis-2/3">
           {experiences.map((exp, index) => (
             <>
               <motion.div

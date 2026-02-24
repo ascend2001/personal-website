@@ -12,7 +12,7 @@ import {
 import Button from '../components/Button';
 
 import AvnishMoon from '../assets/avnish-on-moon.svg';
-import { HandleClick, sendEmail } from '../common/handlers';
+import { HandleClick } from '../common/handlers';
 
 const floatingIcons = [
   {
@@ -74,9 +74,6 @@ function LandingSection() {
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="shadow-lg shadow-coral/20" onClick={HandleClick} id="ToProjects">
                 View My Work
-              </Button>
-              <Button variant="outline" size="lg" onClick={sendEmail}>
-                Contact Me
               </Button>
             </div>
           </div>

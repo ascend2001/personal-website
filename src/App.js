@@ -14,8 +14,8 @@ function App() {
       <LandingSection />
       <AboutMe />
       <ExperienceSection />
-      <ExtracurricularSection />
       <ProjectsSection />
+      <ExtracurricularSection />
       <Footer />
     </div>
   );
