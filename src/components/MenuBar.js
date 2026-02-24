@@ -35,7 +35,7 @@ function MenuBar() {
   }, []);
 
   return (
-    <header className={`h-16 ${scrolled ? 'bg-midnight/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'} flex flex-row fixed w-full z-10`}>
+    <header className={`h-16 ${scrolled ? 'bg-midnight/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'} flex flex-row fixed w-full z-10 px-10`}>
       <div className="flex place-items-center pl-8 w-full font-heading font-black text-coral-light tracking-tight text-3xl">
         avnish
         <span className="text-teal-200">

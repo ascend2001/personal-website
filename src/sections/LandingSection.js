@@ -54,7 +54,7 @@ function LandingSection() {
     <div>
       <section id="Landing">
         <div className="initial-wrapper flex md:flex-row flex-col">
-          <div className="flex flex-col justify-center ml-24 text-white text-6xl font-sans h-dvh">
+          <div className="flex flex-col justify-center ml-24 text-white text-6xl font-sans">
             <div className="mb-5 initial-wrapper-text">
               Hi, I am
               {' '}
