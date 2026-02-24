@@ -14,7 +14,3 @@ export function HandleClick(event) {
     anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
-
-export function sendEmail() {
-  window.location.href = 'mailto:avnishzbox@gmail.com?subject=Me&body=Hello!';
-}

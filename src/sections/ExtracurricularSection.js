@@ -1,36 +1,113 @@
-import React from 'react';
-import SkillsChest from '../assets/Skills-chest.svg';
-import ExpCard from '../components/ExpCard';
-import uclaLogo from '../assets/uclaLogo.png';
-import IEEELogo from '../assets/IEEELogo.png';
-import bpLogo from '../assets/bp-logo.png';
-// import DMLogo from './assets/datamatchLogo.png';
-// import transparent from './assets/transparent.png';
-
-const LAWork = ['Tutored and facilitated instruction to 300+ students for a lower division Intro to Computer Science course taught in C++ through weekly lectures, code tracing workshops, review sessions, and office hours.',
-  'Developed content of class to maximize student learning through weekly content meetings with the instructor to design and walkthrough 20+ assignments through weekly lectures, and project walkthroughs.',
-  'Increased student engagement by over 45% by incorporating feedback from students and peer observations to our lecture.'];
-
-const IDEAHacksWork = ['Spearheaded correspondence and detail-oriented negotiations with 30+ sponsors for Southern California’s largest hackathon.',
-  'Secured 20% of the sponsorships on the team including Chipotle offering cash prizes of eight $50 gift cards and 2 meals of $100'];
-
-const bpwork = ['Directing organization-wide funding efforts by building a funding guide and pipeline to request for UCLA grants and reimbursements, leading corporate sponsorship outreach and sent out 300+ emails to 60+ prospects, and leading fundraisers throughout the year.',
-  'Heading member recruitment by organizing info sessions for different student affinity groups, streamlining the application process that receives 200+ applications all the way through coffee chats, final interviews, deliberation calls, and decisions.',
-  'Organizing internal events, cross-chapter and internal socials, and the annual chapter retreat that caters to 40+ members.'];
+import React, { useCallback, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import Modal from 'react-modal';
+import { motion } from 'framer-motion';
+import Card from '../components/Card';
+import Badge from '../components/Badge';
+import ProjectModal from '../components/ProjectModal';
+import { ModalStyles, Activities } from '../common/constants';
 
 function ExtracurricularSection() {
+  const [modalData, setModalData] = useState(null);
+  const [displayStatus, setDisplayStatus] = useState(false);
+  const openModal = useCallback((data) => {
+    setModalData(data);
+    setDisplayStatus(true);
+  }, []);
+  const closeModal = useCallback(() => setDisplayStatus(false), []);
+
   return (
-    <section className="flex bg-midnight flex-row gap-x-16 text-white" id="Extracurriculars" name="Extracurriculars">
-      <div className="lg:basis-2/3 sm:basis-3/3 mt-6 ml-12 flex flex-col">
-        <div className="text-6xl mt-8">Extracurriculars</div>
-        <div className="flex flex-col">
-          <ExpCard imageName={bpLogo} work={bpwork} company="LA Blueprint" role="Internal Vice President" timeline="January 2022 - Present" location="Los Angeles, CA" />
-          <ExpCard imageName={uclaLogo} work={LAWork} company="Undergraduate Learning Assistant Program at UCLA" role="CS 31 Learning Assistant" timeline="September 2021 - June 2022" location="Los Angeles, CA" />
-          <ExpCard imageName={IEEELogo} work={IDEAHacksWork} company="IEEE at UCLA" role="Company Outreach | IDEA Hacks 2021" timeline="May 2020 - January 2021" location="Remote US" />
+    <section className="flex bg-midnight flex-row gap-x-16 text-white py-20" id="Extracurriculars" name="Extracurriculars">
+      <div className="mt-6 ml-12 flex flex-col">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-heading font-black mb-4">
+            Beyond the Code
+          </h2>
+          <p className="text-xl text-text-muted max-w-2xl mx-auto">
+            Commitment to community, mentorship, and using technology for
+            positive social impact.
+          </p>
         </div>
-      </div>
-      <div className="place-items-center sm:hidden lg:flex">
-        <img src={SkillsChest} alt="" className="skillsChest-img" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {Activities.map((activity, index) => (
+            <>
+              <motion.div
+                key={uuidv4()}
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  delay: index * 0.1,
+                }}
+                onClick={() => openModal(activity)}
+              >
+                <Card
+                  hover
+                  className="h-full flex flex-col relative overflow-hidden"
+                >
+                  {/* Decorative background circle */}
+                  <div
+                    className={`absolute -right-10 -top-10 w-32 h-32 bg-${activity.color}/10 rounded-full blur-2xl`}
+                  />
+
+                  <div className="flex items-start justify-between mb-4 relative z-10">
+                    <div
+                      className={`p-3 rounded-2xl bg-${activity.color}/10 text-${activity.color === 'sky' ? '[#2A9D96]' : `${activity.color}-dark`}`}
+                    >
+                      <activity.icon size={24} />
+                    </div>
+                    <Badge variant={activity.color}>{activity.year}</Badge>
+                  </div>
+
+                  <h3 className="text-2xl font-heading font-bold text-text-dark mb-1 relative z-10">
+                    {activity.company}
+                  </h3>
+                  <p className="text-sm font-bold text-text-muted mb-4 uppercase tracking-wider relative z-10">
+                    {activity.role}
+                  </p>
+
+                  <p className="text-text-dark/80 mb-6 flex-grow relative z-10">
+                    {activity.description}
+                  </p>
+
+                  <div className="pt-4 border-t border-gray-100 mt-auto relative z-10">
+                    <span className="text-sm font-bold text-text-dark flex items-center">
+                      <span
+                        className={`w-2 h-2 rounded-full bg-${activity.color} mr-2`}
+                      />
+                      {activity.impact}
+                    </span>
+                  </div>
+                </Card>
+              </motion.div>
+              {modalData
+                    && (
+                    <Modal isOpen={displayStatus} onRequestClose={closeModal} style={ModalStyles}>
+                      <ProjectModal
+                        imageName={modalData.image}
+                        title={modalData.company}
+                        timeline={modalData.timeline}
+                        work={modalData.work}
+                        role={modalData.role}
+                        link={modalData.link}
+                        devlink={modalData.devlink}
+                        youtubelink={modalData.youtubelink}
+                        blueprintlink={modalData.blueprintlink}
+                        livelink={modalData.livelink}
+                      />
+                    </Modal>
+                    )}
+            </>
+          ))}
+        </div>
       </div>
     </section>
   );

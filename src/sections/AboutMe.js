@@ -4,7 +4,7 @@ import { HeartIcon, ZapIcon, CoffeeIcon } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 import ProfileImg from '../assets/AvnishImg.png';
 import ContactBar from '../components/Contact';
-import AboutMeCard from '../components/AboutMeCard';
+import Card from '../components/Card';
 
 const stats = [
   {
@@ -41,7 +41,7 @@ function AboutMe() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8" id="AboutMe" name="AboutMe">
         <div className="md:col-span-6">
-          <AboutMeCard className="flex flex-col justify-center">
+          <Card className="flex flex-col justify-center">
             <h3 className="text-2xl font-heading font-bold mb-4 text-text-dark">
               &gt; cat ~/about_me.txt
             </h3>
@@ -59,11 +59,11 @@ function AboutMe() {
               please drop by and say hi!
             </p>
             <ContactBar />
-          </AboutMeCard>
+          </Card>
         </div>
         <div className="md:col-span-3 my-auto max-w-sm space-y-8">
           {stats.map((stat) => (
-            <AboutMeCard
+            <Card
               key={uuidv4()}
               className="flex items-center space-x-4 py-4"
               hover
@@ -79,7 +79,7 @@ function AboutMe() {
                   {stat.label}
                 </div>
               </div>
-            </AboutMeCard>
+            </Card>
           ))}
         </div>
         <motion.div

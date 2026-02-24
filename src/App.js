@@ -6,6 +6,7 @@ import MenuBar from './components/MenuBar';
 import ProjectsSection from './sections/ProjectsSection';
 import Footer from './components/Footer';
 import AboutMe from './sections/AboutMe';
+import SkillsSection from './sections/SkillsSection';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutMe />
       <ExperienceSection />
       <ProjectsSection />
+      <SkillsSection />
       <ExtracurricularSection />
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-function AboutMeCard({ children, className, hover }) {
+function Card({ children, className, hover }) {
   return (
     <motion.div
       className={`bg-white rounded-3xl shadow-sm border border-lavender-dark/50 p-6 ${className}`}
@@ -23,15 +23,15 @@ function AboutMeCard({ children, className, hover }) {
     </motion.div>
   );
 }
-AboutMeCard.defaultProps = {
+Card.defaultProps = {
   children: {},
   className: '',
   hover: false,
 };
-AboutMeCard.propTypes = {
+Card.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   hover: PropTypes.bool,
 };
 
-export default AboutMeCard;
+export default Card;
